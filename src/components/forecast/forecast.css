@@ -1,3 +1,5 @@
+
+@import "forecast.css";
 /* 
 .title{
     font-size: 23px;
@@ -57,39 +59,62 @@
     flex: 1;
     text-align: right;
   } */
+/* ------------------------------ */
+ .daily-container {
+    
+    display: flex;   
+    margin: 20px 0;
 
-  /* Style for the daily item cards */
-  .daily-container {
-    display: flex;
-    justify-content: space-between;
-    /* overflow-x: auto; */
-    margin: 20px 0; /* Add some vertical spacing */
+ 
   }
-  
-  /* Style for the daily item cards */
+
+
+
   .daily-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 150px; /* Set a fixed width for square shape */
-    height: 150px; /* Set a fixed height for square shape */
+    width: 150px;
+    height: 150px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 
- 
   }
+
   
   .daily-item:hover {
     background-color: #f0f0f0;
   }
+
+
+
   
   .icon-small {
     width: 50px;
     height: 50px;
   }
+
+  @media (max-width: 768px) {
+    .daily-item {
+      width: 120px; /* Adjust width for smaller screens */
+      height: 120px; /* Adjust height for smaller screens */
+      margin-right: 5px; /* Adjust margin for smaller spacing */
+      padding: 5px; /* Adjust padding for smaller spacing */
+    }
+    
+    .icon-small {
+      width: 40px; /* Adjust icon size for smaller screens */
+      height: 40px;
+    }
+  }
+
   
- 
+  
+
+
+
+  

@@ -1,0 +1,95 @@
+/* 
+.title{
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.daily-item{
+    background-color: rgb(204, 209, 213);
+    border-radius: 15px;
+    height: 40px;
+    margin: 5px;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+} */
+/* ------------------------------ */
+
+/* .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+
+  .daily-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .daily-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .icon-small {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .day {
+    font-size: 18px;
+    font-weight: bold;
+    flex: 1;
+  }
+  
+  .description {
+    flex: 2;
+  }
+  
+  .min-max {
+    flex: 1;
+    text-align: right;
+  } */
+
+  /* Style for the daily item cards */
+  .daily-container {
+    display: flex;
+    justify-content: space-between;
+    /* overflow-x: auto; */
+    margin: 20px 0; /* Add some vertical spacing */
+  }
+  
+  /* Style for the daily item cards */
+  .daily-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px; /* Set a fixed width for square shape */
+    height: 150px; /* Set a fixed height for square shape */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+ 
+  }
+  
+  .daily-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .icon-small {
+    width: 50px;
+    height: 50px;
+  }
+  
+ 

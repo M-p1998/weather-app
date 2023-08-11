@@ -1,143 +1,67 @@
-
 @import "forecast.css";
-/* 
-.title{
-    font-size: 23px;
-    font-weight: 700;
-}
 
-.daily-item{
-    background-color: rgb(204, 209, 213);
-    border-radius: 15px;
-    height: 40px;
-    margin: 5px;
-    align-items: center;
-    cursor: pointer;
-    font-size: 14px;
-} */
-/* ------------------------------ */
-
-/* .title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-
-  .daily-item {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .daily-item:hover {
-    background-color: #f0f0f0;
-  }
-  
-  .icon-small {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-  }
-  
-  .day {
-    font-size: 18px;
-    font-weight: bold;
-    flex: 1;
-  }
-  
-  .description {
-    flex: 2;
-  }
-  
-  .min-max {
-    flex: 1;
-    text-align: right;
-  } */
-/* ------------------------------ */
-
-.title{
+.title {
   text-align: center;
+  position: relative;
+  /* width: 100%; */
+  display: flex;
   justify-content: center;
-  margin:auto;
+  padding-top: 20px;
+  font-size: 30px;
+  /* margin-left: 30px; */
 }
- .daily-container {
-    
-    display: flex;   
-    margin: 20px 0;
-    justify-content: center;
-    /* flex-wrap: wrap; */
-    /* overflow-x: auto; */
+
+.daily-container {
+
+  display: flex;
+  margin: 20px 0;
+  justify-content: center;
+
+}
+
+
+
+.daily-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+
+.daily-item:hover {
+  background-color: #f0f0f0;
+}
+
+
+.icon-small {
+  width: 50px;
+  height: 50px;
+}
+
+
+@media (max-width: 1150px) {
+  .daily-container {
+    flex-wrap: wrap;
+    /* Allow cards to wrap to the next row */
+    justify-content: flex-start;
+    /* Align cards to start of flex container */
   }
 
-
-
-  .daily-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 150px;
-    height: 150px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-
-  }
-
-  
-  .daily-item:hover {
-    background-color: #f0f0f0;
-  }
 
 
   .icon-small {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    /* Adjust icon size for smaller screens */
+    height: 40px;
   }
 
-
-/* @media (max-width: 900px) {
-    .daily-container {
-      flex-wrap: wrap;
-      justify-content: flex-start; 
-    }
-  
-    .daily-item {
-      width: 100%;
-      margin: 5px;
-    }
-  
-    .icon-small {
-      width: 40px;
-      height: 40px;
-    }
-  }
-   */
-
-   @media (max-width: 1150px) {
-    .daily-container {
-      flex-wrap: wrap; /* Allow cards to wrap to the next row */
-      justify-content: flex-start; /* Align cards to start of flex container */
-    }
-  
-    
-  
-    .icon-small {
-      width: 40px; /* Adjust icon size for smaller screens */
-      height: 40px;
-    }
-    
-  }
-  
-
-
-
-  
+}

@@ -1,11 +1,28 @@
 
 import "./current-weather.css"
+import { useEffect,useState } from "react";
+import getTimeAndDate from "./TimeApi";
 
 const CurrentWeather = ({data}) => {
+
+//     const [currentDateTime, setCurrentDateTime] = useState(null);
+
+//   useEffect(() => {
+//     async function fetchTimeAndDate() {
+//       const cityTime = await getTimeAndDate(data.city);
+//       setCurrentDateTime(cityTime);
+//     }
+
+//     fetchTimeAndDate();
+//   }, [data.city]);
+
+
+
     return (
         <div className="weather">
             <div className="top">
                 <div>
+                {/* <p>City Time: {currentDateTime?.toLocaleString()}</p> */}
                     <p className="city">{data.city}</p>
                     <p className="weather-description">{data.weather[0].description}</p>
 

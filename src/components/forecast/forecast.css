@@ -60,12 +60,19 @@
     text-align: right;
   } */
 /* ------------------------------ */
+
+.title{
+  text-align: center;
+  justify-content: center;
+  margin:auto;
+}
  .daily-container {
     
     display: flex;   
     margin: 20px 0;
-
- 
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* overflow-x: auto; */
   }
 
 
@@ -91,28 +98,44 @@
   }
 
 
-
-  
   .icon-small {
     width: 50px;
     height: 50px;
   }
 
-  @media (max-width: 768px) {
-    .daily-item {
-      width: 120px; /* Adjust width for smaller screens */
-      height: 120px; /* Adjust height for smaller screens */
-      margin-right: 5px; /* Adjust margin for smaller spacing */
-      padding: 5px; /* Adjust padding for smaller spacing */
+
+/* @media (max-width: 900px) {
+    .daily-container {
+      flex-wrap: wrap;
+      justify-content: flex-start; 
     }
+  
+    .daily-item {
+      width: 100%;
+      margin: 5px;
+    }
+  
+    .icon-small {
+      width: 40px;
+      height: 40px;
+    }
+  }
+   */
+
+   @media (max-width: 1150px) {
+    .daily-container {
+      flex-wrap: wrap; /* Allow cards to wrap to the next row */
+      justify-content: flex-start; /* Align cards to start of flex container */
+    }
+  
     
+  
     .icon-small {
       width: 40px; /* Adjust icon size for smaller screens */
       height: 40px;
     }
+    
   }
-
-  
   
 
 
